@@ -1,4 +1,3 @@
-
 //
 //  MarqueeLabel.m
 //  
@@ -828,14 +827,6 @@ typedef void (^animationCompletionBlock)(void);
 }
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 60000
-- (NSAttributedString *)attributedText {
-    return self.subLabel.attributedText;
-}
-
-- (void)setAttributedText:(NSAttributedString *)attributedText {
-    self.subLabel.attributedText = attributedText;
-}
-
 - (void)setAdjustsLetterSpacingToFitWidth:(BOOL)adjustsLetterSpacingToFitWidth {
     // By the nature of MarqueeLabel, this is NO
     [super setAdjustsLetterSpacingToFitWidth:NO];
